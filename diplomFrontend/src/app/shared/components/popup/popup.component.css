@@ -1,0 +1,80 @@
+
+.popup {
+  width: 727px;
+  height: 489px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #709FDC;
+  position: fixed;
+  padding: 94px 153px 86px 153px;
+  box-sizing: border-box;
+  top: calc(50% - 245px);
+  left: calc(50% - 363px);
+  z-index: 100;
+}
+
+.popup.okay {
+  padding: 163px 140px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.popup-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #709FDC;
+}
+
+.popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.popup-input .input {
+  color: #709FDC;
+}
+
+.popup-action .button {
+  padding: 15px 0;
+  width: 422px;
+  box-sizing: border-box;
+}
+
+.popup-action .button.okay {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 10px 20px;
+  width: 73px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+}
+
+.popup-description {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1E1A2B;
+}
+
+.popup-action span {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: red;
+  display: flex;
+}

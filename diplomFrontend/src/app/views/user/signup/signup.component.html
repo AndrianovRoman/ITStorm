@@ -1,0 +1,44 @@
+<div class="signup" [formGroup]="signupForm">
+  <div class="container">
+    <div class="auth-form">
+      <div class="auth-form-title">Регистрация на сайте</div>
+      <div class="auth-inputs">
+        <div class="auth-input">
+          <input type="text" class="input"
+                 [ngStyle]="{'border-color': nameValidation ? 'red' : ''}"
+                 placeholder="Ваше имя" formControlName="name">
+          <div class="input-error" *ngIf="nameValidation">Поле обязательно для заполнения</div>
+        </div>
+        <div class="auth-input">
+          <input type="text" class="input"
+                 [ngStyle]="{'border-color': emailValidation ? 'red' : ''}"
+                 placeholder="Электронная почта" formControlName="email">
+          <div class="input-error" *ngIf="emailValidation">Поле обязательно для заполнения</div>
+        </div>
+        <div class="auth-input">
+          <input type="password" class="input"
+                 [ngStyle]="{'border-color': passwordValidation ? 'red' : ''}"
+                 placeholder="Пароль" formControlName="password">
+          <div class="input-error" *ngIf="passwordValidation">Поле обязательно для заполнения</div>
+        </div>
+        <div class="auth-checkbox">
+          <input type="checkbox" id="agree" formControlName="agree">
+          <label for="agree">
+            Я принимаю <a routerLink="/policy" fragment="terms">условия пользовательского соглашения</a> и даю <a routerLink="/policy" fragment="consent">согласие на обработку персональных данных</a>.
+          </label>
+        </div>
+      </div>
+
+      <div class="auth-button">
+        <button class="button" [disabled]="signupForm.invalid" (click)="signup()">Зарегистрироваться</button>
+      </div>
+      <div class="auth-link">
+        Уже есть аккаунт? <a routerLink="/login">Войдите</a>
+      </div>
+
+    </div>
+    <div class="auth-image">
+      <img src="assets/images/signup.png" alt="Signup Image">
+    </div>
+  </div>
+</div>

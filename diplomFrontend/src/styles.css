@@ -1,0 +1,31 @@
+@import "assets/styles/_fonts.css";
+@import "assets/styles/_global.css";
+@import "assets/styles/_blog-details-text.css";
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+.carousel .owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 0;
+  position: absolute;
+  bottom: 20px;
+  right: calc(50% - 36px);
+}
+
+.carousel .owl-theme .owl-dots .owl-dot span {
+  background: transparent !important;
+  border: 1px solid #FFFFFF;
+}
+
+.carousel .owl-theme .owl-dots .owl-dot.active span,
+.carousel .owl-theme .owl-dots .owl-dot:hover span {
+  background: #FFFFFF !important;
+}

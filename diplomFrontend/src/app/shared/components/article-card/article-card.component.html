@@ -1,0 +1,13 @@
+<div class="popular-item" >
+
+  <div class="popular-item-content">
+    <div class="popular-item-banner">{{popular.category}}</div>
+    <div class="popular-item-image" style="background-image: url('../../../../assets/images/article/{{popular.image}}')"></div>
+    <div class="popular-item-title">{{popular.title}}</div>
+    <div class="popular-item-description">{{popular.description}}</div>
+  </div>
+
+  <div class="popular-item-action">
+    <a [routerLink]="'/articles/' + popular.url">Читать дальше</a>
+  </div>
+</div>

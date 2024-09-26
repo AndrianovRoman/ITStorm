@@ -1,0 +1,52 @@
+<div class="popup" [ngClass]="{okay: isSuccess}">
+
+  <div class="popup-close" (click)="close()">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="1.93562" y1="2.64999" x2="13.9564" y2="14.6708" stroke="#BEBEBE" stroke-linecap="round"/>
+      <line x1="13.9236" y1="2.62978" x2="1.90277" y2="14.6506" stroke="#BEBEBE" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <ng-container *ngIf="!isSuccess; else thankyou">
+    <form [formGroup]="popupForm">
+
+      <div class="popup-title">{{popupTitle}}</div>
+
+      <div class="popup-inputs">
+        <div class="popup-input" *ngIf="popupType === 'order'">
+          <select class="input" formControlName="service">
+            <option *ngFor="let category of categories"
+                    value="{{category.name}}">
+              {{category.nameForClients}}
+            </option>
+          </select>
+        </div>
+        <div class="popup-input">
+          <input class="input" type="text"
+                 [ngStyle]="{'border-color': nameValidation ? 'red' : ''}"
+                 placeholder="Ваше имя" formControlName="name">
+          <div class="input-error" *ngIf="nameValidation">Поле обязательно для заполнения</div>
+        </div>
+        <div class="popup-input">
+          <input class="input" type="text"
+                 [ngStyle]="{'border-color': phoneValidation ? 'red' : ''}"
+                 placeholder="Ваш номер телефона" formControlName="phone">
+          <div class="input-error" *ngIf="phoneValidation">Поле обязательно для заполнения</div>
+        </div>
+      </div>
+      <div class="popup-action">
+        <button class="button" (click)="sendRequest()" [disabled]="popupForm.invalid">{{buttonName}}</button>
+
+        <span *ngIf="error">Произошла ошибка при отправке формы, попробуйте еще раз.</span>
+      </div>
+    </form>
+  </ng-container>
+</div>
+
+<ng-template #thankyou>
+  <div class="popup-title">Спасибо за вашу заявку!</div>
+  <div class="popup-description">Мы свяжемся с вами при первой же возможности.</div>
+  <div class="popup-action">
+    <button class="button okay" (click)="close()">Окей</button>
+  </div>
+</ng-template>

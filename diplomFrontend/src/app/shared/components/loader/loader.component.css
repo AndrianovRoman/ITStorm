@@ -1,0 +1,128 @@
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(74, 74, 74, .8);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading1 {
+  height:100px;
+  position:relative;
+  width:80px;
+}
+.loading1 > div {
+  background-color:#FFFFFF;
+  height:30px;
+  position:absolute;
+  width:12px;
+
+  /* css3 radius */
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+
+  /* css3 transform - scale */
+  transform:scale(0.4);
+
+  /* css3 animation */
+  animation-name:loading1;
+  animation-duration:1.04s;
+  animation-iteration-count:infinite;
+  animation-direction:linear;
+}
+.loading1 > div:nth-child(1) {
+  left:0;
+  top:36px;
+
+  /* css3 transform - rotate */
+  transform:rotate(-90deg);
+  /* css3 animation */
+  animation-delay:0.39s;
+}
+
+.loading1 > div:nth-child(2) {
+  left:10px;
+  top:13px;
+
+  /* css3 transform - rotate */
+  transform:rotate(-45deg);
+
+  /* css3 animation */
+  animation-delay:0.52s;
+}
+
+.loading1 > div:nth-child(3) {
+  left:34px;
+  top:4px;
+
+  /* css3 transform - rotate */
+  transform:rotate(0deg);
+
+  /* css3 animation */
+  animation-delay:0.65s;
+}
+
+.loading1 > div:nth-child(4) {
+  right:10px;
+  top:13px;
+
+  /* css3 transform - rotate */
+  transform:rotate(45deg);
+
+  /* css3 animation */
+  animation-delay:0.78s;
+}
+.loading1 > div:nth-child(5) {
+  right:0;
+  top:36px;
+
+  /* css3 transform - rotate */
+  transform:rotate(90deg);
+
+  /* css3 animation */
+  animation-delay:0.91s;
+}
+.loading1 > div:nth-child(6) {
+  right:10px;
+  bottom:9px;
+
+  /* css3 transform - rotate */
+  transform:rotate(135deg);
+
+  /* css3 animation */
+  animation-delay:1.04s;
+}
+.loading1 > div:nth-child(7) {
+  bottom:0;
+  left:34px;
+
+  /* css3 transform - rotate */
+  transform:rotate(180deg);
+
+  /* css3 animation */
+  animation-delay:1.17s;
+}
+.loading1 > div:nth-child(8) {
+  left:10px;
+  bottom:9px;
+
+  /* css3 transform - rotate */
+  transform:rotate(-135deg);
+
+  /* css3 animation */
+  animation-delay:1.3s;
+}
+
+/* css3 keyframes - loading1 */
+@keyframes loading1 {
+  0%{ background-color:#C4D9FD }
+  100%{ background-color:#2D50A7 }
+}
+

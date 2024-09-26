@@ -1,0 +1,48 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+select.input {
+  height: 56px;
+}
+
+.input {
+  width: 422px;
+  border-radius: 3px;
+  border: 1px solid #709FDC;
+  padding: 18px 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: #1E1A2B;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #A8ABA7;
+}
+
+.input-error {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: red;
+}
+
+.button {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  padding: 15px 33px;
+  color: #FFFFFF;
+  font-size: 16px;
+  background: #709FDC;
+  border-radius: 5px;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}

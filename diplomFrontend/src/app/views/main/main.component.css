@@ -1,0 +1,421 @@
+
+.main {
+  padding-bottom: 120px;
+}
+
+.carousel {
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.carousel-item {
+  width: 1239px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.carousel-item-circle {
+  width: 1400px;
+  height: 1400px;
+  border-radius: 50%;
+  background: #B9D5FD;
+  position: absolute;
+  top: -700px;
+  left: -700px;
+}
+
+.carousel-item-info {
+  position: relative;
+  z-index: 3;
+  padding: 100px 0 98px 80px;
+}
+
+.carousel-item-info-before-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #709FDC;
+  letter-spacing: 6px;
+}
+
+.carousel-item-info-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #FFFFFF;
+  width: 610px;
+  margin-bottom: 40px;
+}
+
+.carousel-item-info-title.second {
+  margin-bottom: 20px;
+}
+
+.carousel-item-info-title span {
+  color: #709FDC;
+}
+
+.carousel-item-info-description {
+  width: 456px;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.carousel-item-info .button {
+  width: 163px;
+}
+
+.arrows {
+  display: flex;
+}
+
+.arrows a {
+  top: calc(50% - 5px);
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.arrows a.move-backward {
+  left: 11px;
+}
+
+.arrows a.move-forward {
+  right: 11px;
+}
+
+.services {
+  margin-bottom: 120px;
+}
+
+.services-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #709FDC;
+  margin-bottom: 40px;
+}
+
+.services-items {
+  display: flex;
+  align-items: stretch;
+  gap: 26px;
+}
+
+.services-item {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*height: 498px;*/
+}
+
+.services-item-content {
+  flex-grow: 1;
+}
+
+.services-item-image {
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.services-item-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #709FDC;
+  margin-bottom: 10px;
+}
+
+.services-item-description {
+  font-size: 14px;
+  color: #071739;
+  /*height: 90px;*/
+
+}
+
+.services-item-extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*height: 49px;*/
+  margin-top: 15px;
+}
+
+.services-item-extra-price {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #709FDC;
+}
+
+.services-item-extra-button .button {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  width: 163px;
+  padding: 15px 33px;
+  color: #FFFFFF;
+  font-size: 16px;
+  background: #709FDC;
+  border-radius: 5px;
+  border: 0;
+  text-decoration: none;
+}
+
+.popular {
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.popular-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #709FDC;
+  margin-bottom: 40px;
+}
+
+.popular-items {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+article-card {
+  display: flex;
+}
+
+.popular-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 195px;
+  position: relative;
+  right: -1045px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #709FDC;
+}
+
+.reviews {
+  margin-bottom: 120px;
+}
+
+.reviews-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #709FDC;
+  margin-bottom: 20px;
+}
+
+.reviews-carousel {
+  position: relative;
+}
+
+.review-item {
+  width: 396px;
+  padding: 30px;
+  height: 267px;
+  box-sizing: border-box;
+  border: 1px solid #709FDC;
+  border-radius: 5px;
+}
+
+.review-item-header {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 15px;
+}
+
+.review-item-header-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.review-item-header-name {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #709FDC;
+}
+
+.review-item-description {
+  font-size: 16px;
+  color: #071739;
+  line-height: 130%;
+}
+
+.reviews-arrows {
+  display: flex;
+}
+
+.reviews-arrows a {
+  top: calc(50% - 5px);
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+}
+
+.reviews-arrows a.move-backward {
+   left: -23px;
+ }
+
+.reviews-arrows a.move-forward {
+   right: -23px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 106px;
+}
+
+.contacts-info-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #709FDC;
+  margin-bottom: 20px;
+}
+
+.contacts-info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts-info-item {
+  width: 501px;
+}
+
+.contacts-info-item-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #709FDC;
+}
+
+.contacts-info-item-description {
+  font-size: 14px;
+  line-height: 130%;
+  color: #071739;
+}
+
+.contacts-info-item-socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/*.contacts-info-item-socials-item {*/
+/*  cur*/
+/*}*/
+
+.about {
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.about-image {
+  margin-right: 68px;
+  width: 460px;
+  height: 453px;
+  border-radius: 5px;
+}
+
+.about-content {
+
+}
+
+.about-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #709FDC;
+}
+
+.about-description {
+  font-size: 14px;
+  line-height: 130%;
+  color: #1E1A2B;
+  margin-bottom: 40px;
+}
+
+.about-description span {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+}
+
+.about-advantages {
+
+}
+
+.about-advantages-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #709FDC;
+  margin-bottom: 20px;
+}
+
+.about-advantages-items {
+  display: grid;
+  grid-template-columns: repeat(2, 316px);
+  grid-template-rows: repeat(2, 90px);
+  row-gap: 20px;
+  column-gap: 71px;
+}
+
+.about-advantages-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-advantages-item-circus {
+  width: 40px;
+  height: 40px;
+  background: #B9D5FD;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.about-advantages-item-circus span {
+  position: absolute;
+  color: #709FDC;
+  font-family: Lora, sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  width: 28px;
+  top: -20px;
+  left: calc(40px - 85%);
+}
+
+.about-advantages-item-text {
+  font-size: 14px;
+  color: #1E1A2B;
+  line-height: 130%;
+  width: 256px;
+}
+
+.about-advantages-item-text span {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+}

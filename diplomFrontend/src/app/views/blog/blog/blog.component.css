@@ -1,0 +1,96 @@
+
+.blog {
+  padding: 80px 0 120px 0;
+}
+
+.blog-title {
+  font-family: Lora, sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #709FDC;
+  margin-bottom: 40px;
+}
+
+.blog-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.blog-filters-items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-filters-item {
+  padding: 8px 20px;
+  border: 1px solid #709FDC;
+  border-radius: 5px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-filters-item span {
+  font-size: 16px;
+  color: #709FDC;
+}
+
+.blog-filters-item .blog-filters-item-close {
+  cursor: pointer;
+  width: 16px;
+  height: 17px;
+}
+
+.blog-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 40px;
+  margin-bottom: 60px;
+}
+
+article-card {
+  display: flex;
+}
+
+/*Стили для пагинации*/
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pagination-arrow {
+  cursor: pointer;
+}
+
+.pagination-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination-page {
+  font-size: 20px;
+  padding: 10px;
+  color: #071739;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination-page.active {
+  color: #B9D5FD;
+}
+
+/*----------------------------------*/

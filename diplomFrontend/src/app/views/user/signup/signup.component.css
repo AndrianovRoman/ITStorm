@@ -1,0 +1,11 @@
+@import "../../../../assets/styles/_auth-form.css";
+
+.signup {
+  padding: 120px 0;
+}
+
+.signup .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

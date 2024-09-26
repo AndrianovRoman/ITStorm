@@ -1,0 +1,20 @@
+<div class="blog-filters-filter" [class.open]="filterOpen" (click)="toggleFilter()">
+
+  <div class="blog-filters-filter-head">
+    <span>Фильтр</span>
+
+    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.99998 -3.14713e-05C8.58332 -3.14713e-05 9.16665 0.224967 9.60832 0.666634L15.0417 6.09997C15.2833 6.34163 15.2833 6.74163 15.0417 6.9833C14.8 7.22497 14.4 7.22497 14.1583 6.9833L8.72498 1.54997C8.32498 1.14997 7.67498 1.14997 7.27498 1.54997L1.84165 6.9833C1.59999 7.22497 1.19998 7.22497 0.958317 6.9833C0.716651 6.74163 0.716651 6.34163 0.958317 6.09997L6.39165 0.666634C6.83332 0.224967 7.41665 -3.14713e-05 7.99998 -3.14713e-05Z" fill="#071739"/>
+    </svg>
+  </div>
+
+  <div class="blog-filters-filter-body">
+    <div class="blog-filters-filter-item"
+         *ngFor="let category of categories">
+      <label class="blog-filters-filter-checkbox" [class.active]="getOptionActive(category.url)" (click)="addCategory(category.url)">
+        <span>{{category.name}}</span>
+      </label>
+    </div>
+  </div>
+
+</div>
